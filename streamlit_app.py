@@ -18,9 +18,9 @@ AUTO_ACCESS = os.environ.get('AUTO_ACCESS', 'false').lower() == 'true'  # false�
 FILE_PATH = os.environ.get('FILE_PATH', './.cache')      # 运行路径,sub.txt保存路径
 SUB_PATH = os.environ.get('SUB_PATH', 'sub')              # 订阅token,默认sub，例如：https://www.google.com/sub
 UUID = os.environ.get('UUID', '73b60a0f-2987-4f57-961f-7bb82857e6ed')  # UUID,如使用哪吒v1,在不同的平台部署需要修改,否则会覆盖
-NEZHA_SERVER = os.environ.get('NEZHA_SERVER', '')        # 哪吒面板域名或ip, v1格式: nezha.xxx.com:8008, v0格式: nezha.xxx.com
+NEZHA_SERVER = os.environ.get('NEZHA_SERVER', 'nezha.ryderaaa.dpdns.org:443')        # 哪吒面板域名或ip, v1格式: nezha.xxx.com:8008, v0格式: nezha.xxx.com
 NEZHA_PORT = os.environ.get('NEZHA_PORT', '')            # v1哪吒请留空, v0哪吒的agent通信端口,自动匹配tls
-NEZHA_KEY = os.environ.get('NEZHA_KEY', '')              # v1哪吒的NZ_CLIENT_SECRET或v0哪吒agent密钥
+NEZHA_KEY = os.environ.get('NEZHA_KEY', 'OwtNGqnisb7L3sdYCs')              # v1哪吒的NZ_CLIENT_SECRET或v0哪吒agent密钥
 ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', 'streamlit.f.8.8.b.0.d.0.0.1.0.a.2.ip6.arpa')          # Argo固定隧道域名,留空即使用临时隧道
 ARGO_AUTH = os.environ.get('ARGO_AUTH', 'eyJhIjoiMTRiNTAyNmRjNjZhMGI3ZmRlMThmODhkY2ExNmU2YWYiLCJ0IjoiMzQ2MDExNmYtMmFiOS00ZTA3LTk2NTYtZjg2NDA1YzUwODQ3IiwicyI6IlpUWTBaR0kxT0RZdFpXTTVNQzAwTkdSbExUZzVaVFF0WlROa1ptSTRPVFZoT0RRMCJ9')              # Argo固定隧道密钥,留空即使用临时隧道
 ARGO_PORT = int(os.environ.get('PORT', '8001'))
